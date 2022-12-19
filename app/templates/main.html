@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+                <link rel="stylesheet" href="static/style.css" />
+        </head>
+
+
+        <body>
+                <main class="main">
+                        <h2>Humidity:</h2>
+                        <div class="number"><h2 id="humidity">Humidity: {{ humidity }} %</h2></div>
+                        
+                        <h2>Temp:</h2>
+                        <div class="number"><h2 id="temp">{{temp}} C*</h2></div>
+                        
+                        <h2>Soil moistrue:</h2>
+                        <div class="number"><h2 id="soil-moistrue">{{soilMoistrue}}</h2></div>
+                        
+                        <h2>Lighting:</h2>
+                        <div class="number"><h2 id="lighting">{{lighting}}</h2></div>
+                        
+                        <div class="number"><h1 id="addd">200</h1></div>
+                        
+                        <div class="btn">
+							<button id="button-light-switch" type="button">{{button}}</button>
+						</div>
+                        
+                        <script src="{{ url_for('static', filename='script.js')}}"></script>
+                </main>
+        </body>
+</html>
